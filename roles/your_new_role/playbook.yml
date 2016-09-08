@@ -1,0 +1,4 @@
+---
+- hosts: all
+  roles:
+    - role: your_new_role

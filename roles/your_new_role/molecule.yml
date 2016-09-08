@@ -1,0 +1,15 @@
+---
+docker:
+  containers:
+
+      - name: your_new_role-01
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1
+
+      - name: your_new_role-02
+        image: ubuntu
+        image_version: latest
+        ansible_groups:
+          - group1

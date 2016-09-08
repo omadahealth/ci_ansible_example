@@ -1,0 +1,12 @@
+---
+
+site_name: "Ansible Test-Driven Development"
+docs_dir: doc/
+pages:
+  - Home: index.md
+  - 'Table Of Contents': toc.md
+  - Guide: 
+    - Introduction: 00_introduction.md
+    - 'Configuration Management': 01_config_management_w_ansible.md
+    - 'Extending Ansible': 02_extending_ansible.md
+theme: united

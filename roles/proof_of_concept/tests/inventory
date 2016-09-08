@@ -1,0 +1,8 @@
+concept-01 ansible_connection=docker
+concept-02 ansible_connection=docker
+
+[group1]
+concept-01
+
+[group2]
+concept-02

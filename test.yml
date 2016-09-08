@@ -1,0 +1,23 @@
+---
+
+- name: Tests
+  hosts: all
+  connection: local
+  become: no
+  tasks:
+    - concept:
+      register: test_value_init
+
+    - name: Assert that default returned 'param' value is 'foobar'
+      assert:
+        that:
+          - test_value_init.param == 'foobar'
+
+    - concept:
+        param: "barfoo"
+      register: test_value
+
+    - name: Assert that user-defined param is returned 'param' value
+      assert:
+        that:
+          - test_value.param == 'barfoo'

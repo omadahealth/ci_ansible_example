@@ -1,0 +1,9 @@
+---
+
+- name: Test playbook for 'proof-of-concept' role
+  hosts: all
+  tasks:
+    - debug:
+  roles:
+    - proof_of_concept
+
